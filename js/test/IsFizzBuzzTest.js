@@ -1,6 +1,6 @@
 class IsFizzBuzzTest {
     constructor() {
-      this.fizzBuzz = new FizzBuzz(3, 5);
+      this.fb = new FizzBuzz(3, 5);
     }
     test() {
         this.testPositiveFizzBuzz();    
@@ -9,27 +9,15 @@ class IsFizzBuzzTest {
     }
   
     testPositiveFizzBuzz() {
-      const expectedOutput = true;
-      const input = 15;
-      const result = this.fizzBuzz.isFizzBuzz(input);
-      if (expectedOutput !== result)
-        throw new Error(`Test case failed: expected ${expectedOutput} but got ${result}`);
+      test(true, this.fb, this.fb.isFizzBuzz, 15);
     }
   
     testNegativeFizzBuzz() {
-      const expectedOutput = false;
-      const input = 16;
-      const result = this.fizzBuzz.isFizzBuzz(input);
-      if (expectedOutput !== result)
-        throw new Error(`Test case failed: expected ${expectedOutput} but got ${result}`);
+      test(true, this.fb, this.fb.isFizzBuzz, 16);
     }
   
     testEdgeCaseFizzBuzz() {
-      const expectedOutput = false;
-      const input = 0;
-      const result = this.fizzBuzz.isFizzBuzz(input);
-      if (expectedOutput !== result)
-        throw new Error(`Test case failed: expected ${expectedOutput} but got ${result}`);
+      test(true, this.fb, this.fb.isFizzBuzz, 0);
     }
   }
   
