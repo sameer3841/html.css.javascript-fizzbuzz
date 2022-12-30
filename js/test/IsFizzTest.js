@@ -1,4 +1,9 @@
 class IsFizzTest {
+    test() {
+        this.testFizzIsDivisible();
+        this.testFizzIsNotDivisible();
+        this.testFizzIsZero()
+    }
     testFizzIsDivisible() {
       const fb = new FizzBuzz(3, 5);
       const output = fb.isFizz(9);

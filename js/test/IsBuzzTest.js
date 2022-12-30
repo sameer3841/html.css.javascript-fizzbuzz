@@ -2,6 +2,12 @@ class IsBuzzTest {
     constructor() {
       this.fizzBuzz = new FizzBuzz(3, 5);
     }
+
+    test() {
+        this.testMultipleOfBuzz();
+        this.testNotMultipleOfBuzz();
+        this.testMultipleOfBuzzWithBuzzGreaterThanFizz();
+    }
   
     // Test case 1: Check if isBuzz returns true for multiple of buzz
     testMultipleOfBuzz() {

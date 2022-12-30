@@ -2,6 +2,11 @@ class IsFizzBuzzTest {
     constructor() {
       this.fizzBuzz = new FizzBuzz(3, 5);
     }
+    test() {
+        this.testPositiveFizzBuzz();    
+        this.testNegativeFizzBuzz();
+        this.testEdgeCaseFizzBuzz();
+    }
   
     testPositiveFizzBuzz() {
       const expectedOutput = true;
@@ -27,9 +32,4 @@ class IsFizzBuzzTest {
         throw new Error(`Test case failed: expected ${expectedOutput} but got ${result}`);
     }
   }
-  
-  const fizzBuzzTest = new FizzBuzzTest();
-  fizzBuzzTest.testPositiveFizzBuzz();
-  fizzBuzzTest.testNegativeFizzBuzz();
-  fizzBuzzTest.testEdgeCaseFizzBuzz();
   
