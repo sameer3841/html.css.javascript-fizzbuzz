@@ -1,4 +1,4 @@
-# Project Title
+# Fancy Fizz Buzz
 
 * **Purpose** - To gain familiarity the `if` and `else` statements
 
