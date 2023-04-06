@@ -5,18 +5,19 @@ class FizzBuzz {
     }
   
     isFizz(num) {
-        return null;
+        return num == 0? true : num % this.fizz == 0;
     }
   
     isBuzz(num) {
-        return null;
+        return num == 0? true : num % this.fizz == 0;
     }
   
     isFizzBuzz(num) {
-        return null;
+        return isFizz(num) && this.isBuzz(num);
     }
   
     getOutput(num) {
+
         return null;
     }
   }
