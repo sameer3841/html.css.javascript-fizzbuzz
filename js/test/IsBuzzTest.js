@@ -11,17 +11,17 @@ class IsBuzzTest {
   
     // Test case 1: Check if isBuzz returns true for multiple of buzz
     testMultipleOfBuzz() {
-      test(true, this.fb, this.fb.isFizzBuzz, 5);
+      test(true, this.fb, this.fb.isBuzz, 5);
     }
   
     // Test case 2: Check if isBuzz returns false for non-multiple of buzz
     testNotMultipleOfBuzz() {
-        test(false, this.fb, this.fb.isFizzBuzz, 7);
+        test(false, this.fb, this.fb.isBuzz, 7);
     }
   
     // Test case 3: Check if isBuzz returns true for multiple of buzz with buzz greater than fizz
     testMultipleOfBuzzWithBuzzGreaterThanFizz() {
-        test(true, this.fb, this.fb.isFizzBuzz, 15);
+        test(true, this.fb, this.fb.isBuzz, 15);
     }
   }
   

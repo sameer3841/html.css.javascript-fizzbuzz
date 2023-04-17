@@ -9,16 +9,23 @@ class FizzBuzz {
     }
   
     isBuzz(num) {
-        return num == 0? true : num % this.fizz == 0;
+        return num == 0? true : num % this.buzz == 0;
     }
   
     isFizzBuzz(num) {
-        return isFizz(num) && this.isBuzz(num);
+        return this.isFizz(num) && this.isBuzz(num);
     }
   
     getOutput(num) {
-
-        return null;
+        let str = "";
+        for(let i = 0; i <= num; i++){
+            if(this.isFizz(i)) str += "Fizz";
+            if(this.isBuzz(i)) str += "Buzz";
+            if(!this.isFizz(i) && !this.isBuzz(i)) str += i;
+            str += " ";
+        }
+        str.trim();
+        return str;
     }
   }
   
